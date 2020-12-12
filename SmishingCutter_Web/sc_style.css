@@ -1,0 +1,168 @@
+﻿<style type="text/css">
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css?family=Hi+Melody|Nanum+Gothic|Nanum+Gothic+Coding&display=swap&subset=korean');
+/* Body tag */
+body{
+    font-family: 'Namum Gothic', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+/* P tag */
+.pNanum{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+.pH{
+    font-family: 'Hi Melody', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+.pHs{
+    font-family: 'Hi Melody', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+/* A Link tag */
+a:link{
+	text-decoration: none;
+	color: black;
+}
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+a:active{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+/* Input tag */
+input::placeholder{
+    font-weight: bold;
+	text-align: center;
+}
+.inputNanum{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 14px;
+}
+/* Textarea tag */
+textarea{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 18px;
+    resize: none;
+}
+/* Button tag */
+.butWhite{
+	background-color: white;
+}
+.butWhiteH{
+	background-color: white;
+    font-family: 'Hi Melody', cursive;
+    font-size: 15px;
+    font-weight: bold;
+}
+.butGray{
+	color: white;
+	background-color: #555555;
+}
+/* Form tag */
+.formNoLine{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+/* Table tag */
+.tbNoBorder{
+    font-family: 'Namum Gothic', sans-serif;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	border-collapse: collapse;
+}
+/* Table Row tag */
+/* Table Head tag */
+.thGray{
+    font-family: 'Hi Melody', cursive;
+    font-size: 17px;
+	color: white;
+	background-color: #777777;
+	border-top: 1px solid #585858;
+	border-bottom: 1px solid #585858;
+}
+.thGrayC{
+    font-family: 'Hi Melody', cursive;
+    font-size: 17px;
+	color: white;
+	text-align: center;
+	background-color: #777777;
+	border-top: 1px solid #585858;
+	border-bottom: 1px solid #585858;
+}
+/* Table Data tag */
+.tdCenter{
+	text-align: center;
+}
+.tdCenterU{
+	text-align: center;
+	border-top: 1px solid #D5D5D5;
+}
+.tdLeft{
+	text-align: left;
+}
+.tdLeftU{
+	text-align: left;
+	border-top: 1px solid #D5D5D5;
+}
+.tdRight{
+	text-align: right;
+}
+.tdRightU{
+	text-align: right;
+	border-top: 1px solid #D5D5D5;
+}
+.tdGray{
+	color: black;
+	background-color: #EEEEEE;
+	border-top: 1px solid #D5D5D5;
+}
+.tdGrayC{
+	color: black;
+	text-align: center;
+	background-color: #EEEEEE;
+	border-top: 1px solid #D5D5D5;
+}
+.tdGrayCH{
+    font-family: 'Hi Melody', cursive;
+    font-size: 16px;
+	color: black;
+	text-align: center;
+	background-color: #EEEEEE;
+	border-top: 1px solid #D5D5D5;
+}
+.tdGrayL{
+	color: black;
+	text-align: left;
+	background-color: #EEEEEE;
+	border-top: 1px solid #D5D5D5;
+}
+.tdGrayR{
+	color: black;
+	text-align: right;
+	background-color: #EEEEEE;
+	border-top: 1px solid #D5D5D5;
+}
+</style>

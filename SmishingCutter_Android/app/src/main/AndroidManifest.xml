@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sms">
+
+    <!-- SMS 정보를 가져오기 위한 권한 추가 -->
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH"/>
+    <!-- 단말기 정보를 가져오기 위한 권한 추가 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <!-- 네트워크 사용에 대한 권한 추가 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 다른 앱 위에 그리기 권한과 Foreground 권한 추가 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- 스마트폰 전원 종료 후 부팅시 앱 자동실행 권한 -->
+    <!--
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_scissors"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_scissors_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".SMSReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".OverlayService"
+            android:enabled="true"
+            android:permission="android.permission.SYSTEM_ALERT_WINDOW">
+        </service>
+    </application>
+
+</manifest>
