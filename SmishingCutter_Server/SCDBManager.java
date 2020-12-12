@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 public class SCDBManager {
 	private final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	private final String DB_URL = "jdbc:mysql://database-c99a97.cf6z54xvsafa.ap-northeast-2.rds.amazonaws.com:3306/SC_c99a97?useSSL=false";
+	private final String DB_URL = "**address mosaic**";
 	private final String DB_ID = "cswin";
 	private final String DB_PW = "cswin123!";
 
